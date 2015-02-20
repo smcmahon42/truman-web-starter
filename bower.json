@@ -1,0 +1,32 @@
+{
+  "name": "Truman Web Starter",
+  "version": "0.0.1",
+  "authors": [
+    "Sincerely Truman"
+  ],
+  "description": "A web starter kit based on Bourbon and Neat",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Bourbon",
+    "Neat",
+    "Truman"
+  ],
+  "license": "MIT",
+  "homepage": "http://sincerelytruman.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.0",
+    "jquery": "1.11.1",
+    "neat": "~1.7.1"
+  }
+}
