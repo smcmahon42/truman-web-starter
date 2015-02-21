@@ -90,10 +90,9 @@ gulp.task('default', ['styles', 'scripts'], function () {
   // $.livereload.listen();
 
   browserSync({
-      proxy: "http://local.ijm.com"
+      proxy: "http://local.trumanstarter.com"
   });
 
-  gulp.watch(['craft/templates/**/*.html'], reload);
   gulp.watch(['src/scss/**/*.scss'], ['styles', reload]);
   gulp.watch(['src/js/**/*.js'], ['scripts', reload]);
   gulp.watch(['public/assets/img/**/*'], ['images', reload]);
