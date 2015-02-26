@@ -35,7 +35,7 @@ var AUTOPREFIXER_BROWSERS = [
 // JS Hint & Uglify
 // Check JS for syntax errors, minify & move to public/assets
 gulp.task('scripts', function () {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('_src/js/**/*.js')
     //check JS syntax
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
@@ -51,7 +51,7 @@ gulp.task('scripts', function () {
 gulp.task('styles', function () {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-      'src/scss/*.scss'
+      '_src/scss/*.scss'
     ])
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.rubySass({
@@ -93,7 +93,7 @@ gulp.task('default', ['styles', 'scripts'], function () {
       proxy: "http://local.trumanstarter.com"
   });
 
-  gulp.watch(['src/scss/**/*.scss'], ['styles', reload]);
-  gulp.watch(['src/js/**/*.js'], ['scripts', reload]);
+  gulp.watch(['_src/scss/**/*.scss'], ['styles', reload]);
+  gulp.watch(['_src/js/**/*.js'], ['scripts', reload]);
   gulp.watch(['public/assets/img/**/*'], ['images', reload]);
 });
