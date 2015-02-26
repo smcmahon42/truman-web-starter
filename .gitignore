@@ -4,4 +4,6 @@
 .sass-cache/
 .codekit-cache/
 node_modules/
-src/bower/
+_src/bower/
+public/assets/css/
+public/assets/js/
