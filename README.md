@@ -35,6 +35,8 @@ The gulpfile is set up to run right out of the box, but you will need to make a 
 * Check line 93, replace http://local.trumanstarter.com with your local url.
 * If desired, you can change your asset file destination. Currently all compiled files are placed in public/assets/ (js and css respectivly)
 
+You may notice that the folder public/assets is missing. This is because the assets folder is generated through gulp. This folder will appear on your local setup once you run gulp.
+
 ### Edit your Bitters
 
 #### Fonts
