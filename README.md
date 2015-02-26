@@ -20,8 +20,41 @@ Bower packages are installed into the `_src/bower` folder. By default, the follo
 * `neat`
 * `normalize-scss`
 
-Packages can added to `bower.json` and installed using `bower install --save-dev [package-name]`. See the [Bower website](http://bower.io/) for more details.
+Packages added to `bower.json` and installed using `bower install --save-dev [package-name]`. See the [Bower website](http://bower.io/) for more details.
 
 ## Getting Started
 
-Notes coming soon...
+### Clone or Download the Repo
+
+Either way, Clone or Download the zip to get the files.
+
+### Edit the gulpfile.js
+
+The gulpfile is set up to run right out of the box, but you will need to make a few adjustmets specific to your site. 
+
+* Check line 93, replace http://local.trumanstarter.com with your local url.
+* If desired, you can change your asset file destination. Currently all compiled files are placed in public/assets/ (js and css respectivly)
+
+### Edit your Bitters
+
+#### Fonts
+
+It's a good idea to get your fonts set up right away. Weather you are using TypeKit, Google Fonts, or anyting of the like, you will want to set up a variable at the top of 
+scss>base>_variables.scss. Set a variable that will be used in a font-family attribute. I.E. $example-font: "example-font", sans-serif;
+
+#### Grid Settings
+
+You may need to adjust your Neat Settings in scss>base>_grid-settings.scss. Also within this file are variables set up with Neat's "new-breakpoint" function. [New Breakpoint](http://thoughtbot.github.io/neat-docs/latest/#new-breakpoint) is used with Neat's "[Media()](http://thoughtbot.github.io/neat-docs/latest/#media)" Mixin. I recommend leaving the $medium-screen-up and $large-screen-up variables set as-is. 
+
+Example of usage that compiles to a media query where attribues within media() are visible on medium screens and larger ($medium-screen-up is defined in _grid-settings.scss)
+
+        .element {
+          @include media($medium-screen-up) {
+            @include span-columns(4);
+          }
+        }
+
+### Edit anything else you need
+
+This is a starter package, so we hope it keeps us all on the same page and makes for easy startup of new projects
+
