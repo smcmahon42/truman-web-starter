@@ -24,7 +24,7 @@ Packages can added to `bower.json` and installed using `bower install --save-dev
 
 ## Getting Started - OS X
 
-Note, the following makes use of a CLI and Git, among other things. If those are new to you, the following will be rough.
+Note: The following makes use of a CLI and Git, among other things. If those are new to you, the following will be rough.
 
 ### Prerequisites
 
@@ -45,17 +45,26 @@ To make sure Node and NPM are working properly, run `$ node -v` and `$ npm -v`. 
 
 ### Beginning production
 
+First, if you don’t have access to the TrumanDev GitHub account, hit up @Coppa.
+
 Every project starts with the Truman Web Starter.
 
 `$ git clone https://github.com/TrumanDev/truman-web-starter.git`
 
-If you don’t have access to the TrumanDev GitHub account, hit up @Coppa.
+However, this will probably have already been configured in the project. In that case, to contribute, just clone the project and create a branch. Just two more things before you can get rolling.
+
+### Installing Bower
+
+You’ll need to to install [Bower](http://bower.io/) to get all the bells and whistles…
+
+`$ npm install -g bower`
 
 ### Installing Gulp
 
-Now you’re ready to install [Gulp](http://gulpjs.com/).
+…and [Gulp](http://gulpjs.com/) to compile everything.
 
-1. `$ npm config set prefix /usr/local` - To make sure you’re installing to your root and not your User directory.
-2. `$ npm install -g gulp`
-3. `$ gulp` - Runs Gulp.
-4. To stop Gulp hit `ctrl+C`
+1. `$ npm install -g gulp`
+2. `$ gulp` - Runs Gulp.
+3. To stop Gulp hit `ctrl+C`
+
+Note: If you’re experiencing issues, it may be that you’re not installing into the proper `usr/local` directory. Run `$ npm config set prefix /usr/local` before installing Bower and Gulp to make sure.
