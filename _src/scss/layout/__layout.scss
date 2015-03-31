@@ -1,0 +1,7 @@
+.wrap-full {
+  @include fill-parent;
+}
+
+.wrap-fixed {
+  @include outer-container;
+}
