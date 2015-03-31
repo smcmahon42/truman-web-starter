@@ -57,3 +57,5 @@ Now you’re ready to install [Gulp](http://gulpjs.com/).
 
 1. `$ npm config set prefix /usr/local` - To make sure you’re installing to your root and not your User directory.
 2. `$ npm install -g gulp`
+3. `$ gulp` - Runs Gulp.
+4. To stop Gulp hit `ctrl+C`
