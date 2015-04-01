@@ -1,25 +1,37 @@
-nav ul {
-  text-align: center;
-}
+// For template purposes
 
-nav li {
-  display: inline-block;
-  margin: 0 1em;
-}
+body { margin: 5em 0; }
 
-.tws-header {
-  padding: 2em 0 0;
-  text-align: center;
-  img {
-    @include size(5em);
-  }
-}
+// A border for help visualizing elements
+// * { border: 2px solid $tws-dark; margin: 2px; padding: 2px; }
 
-.tws-description {
+// Section breaks with descriptions
+.description {
   margin: 4em 0;
   padding: .4em 1em;
   font-family: monospace;
   text-align: center;
   color: $action-color;
   background-color: $tws-light;
+}
+
+// Elements
+
+.nav ul li {
+  margin-left: 2em;
+}
+
+.columns .body-item {
+  padding: 2em;
+  text-align: center;
+}
+
+.form {
+  input[type=text] {
+    width: 98%;
+  }
+  input[type=text],
+  textarea {
+    margin-bottom: 1em;
+  }
 }

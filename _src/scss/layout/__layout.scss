@@ -1,7 +1,58 @@
-.wrap-full {
-  @include fill-parent;
+.wrap {
+  @include outer-container;
 }
 
-.wrap-fixed {
-  @include outer-container;
+.header,
+.logo,
+.nav,
+.nav ul,
+.form,
+.body,
+.columns {
+  display: flex;
+}
+
+.description {
+  flex: 1 100%;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 0 0 80px;
+  img {
+    @include size(100%);
+  }
+}
+
+.nav {
+  ul {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.body {
+  flex-wrap: wrap;
+}
+
+.body > .body-item {
+  flex: 1 100%;
+}
+
+.columns {
+  flex-grow: 1;
+  .body-item {
+    flex-grow: 1;
+  }
+}
+
+.form {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  input[type=text] {
+    flex: 1 0 300px;
+  }
 }
