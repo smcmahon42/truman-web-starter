@@ -28,10 +28,12 @@ Note: The following makes use of a CLI and Git, among other things. If those are
 
 ### Prerequisites
 
-Before you can begin production, install the following:
+Before you can begin production, install these:
 * [Xcode](https://developer.apple.com/xcode/downloads/) - Apple software framework. It’s a whopping 6gb, make sure you have room.
 * [Git](http://git-scm.com/) - Modern version control.
 * [Homebrew](http://brew.sh/) - OS X package manager. Makes life easy.
+
+Next you’ll need to install Node, NPM, NVM, Bower, and Gulp.
 
 ### Installing Node
 
@@ -42,6 +44,16 @@ Now you’re ready to install [Node](https://nodejs.org/). Node is a platform fo
 `$ brew install node` - Follow inline instructions if you need to muscle through some snags.
 
 To make sure Node and NPM are working properly, run `$ node -v` and `$ npm -v`. If successfully installed, this will return the versions.
+
+### Installing NVM
+
+NVM (Node Version Manager) allows you to manage different versions of node.
+
+Install `$ npm install -g nvm`
+
+Setup `export PATH=./node_modules/.bin:$PATH`
+
+More info [here](https://www.npmjs.com/package/nvm).
 
 ### Beginning production
 
