@@ -78,3 +78,5 @@ You’ll need to to install [Bower](http://bower.io/) to get all the bells and w
 3. To stop Gulp hit `ctrl+C`
 
 Note: If you’re experiencing issues, it may be that you’re not installing into the proper `usr/local` directory. Run `$ npm config set prefix /usr/local` before installing Bower and Gulp to make sure.
+
+### 👍
