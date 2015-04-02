@@ -35,7 +35,7 @@ Before you can begin production, install these:
 
 Next you’ll need to install Node, NPM, NVM, Bower, and Gulp.
 
-### Installing Node
+### Installing Node/NPM
 
 First make sure Homebrew is working properly. Run `$ brew doctor` Don’t proceed until you see “Your system is ready to brew.”
 
