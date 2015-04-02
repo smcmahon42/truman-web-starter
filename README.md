@@ -47,11 +47,9 @@ To make sure Node and NPM are working properly, run `$ node -v` and `$ npm -v`. 
 
 ### Installing NVM
 
-NVM (Node Version Manager) allows you to manage different versions of node. You may not need NVM if you’re not setting up projects.
+NVM (Node Version Manager) tweaks your shell PATHs so you can keep different versions of Node installed at once and consciously choose one based off the current project. Always make you’re running the right version.
 
-Install `$ npm install -g nvm`
-
-Setup `export PATH=./node_modules/.bin:$PATH`
+Install `$ npm install -g nvm`, setup `$ export PATH=./node_modules/.bin:$PATH`. Use `$ which <command>` to check; i.e. `$which node`.
 
 More info [here](https://www.npmjs.com/package/nvm).
 
